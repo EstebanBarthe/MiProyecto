@@ -1,6 +1,6 @@
 <?php
 
-require_once("modelos/generico_modelo.php");
+require_once("PHP/modelos/generico_modelo.php");
 class Deportistas_modelo extends generico_modelo{
 
     protected $nombre;

@@ -7,13 +7,9 @@
 
 			$ruta = $_GET['r'];    
 
-			if($ruta == "Administrador"){
-				include("vistas/admin_vista.php");
-			} elseif($ruta == "Deportistas"){
+			if($ruta == "deportistas"){
 				include("vistas/deportistas_vista.php");
-			} elseif($ruta == "Menu"){
-				include("vistas/menu_vista.php");
-			} elseif($ruta == "Noticias"){
+			} elseif($ruta == "noticias"){
 				include("vistas/noticias_vista.php");
 			} else{
 				echo("<h1>Bienvenidos</h1>");

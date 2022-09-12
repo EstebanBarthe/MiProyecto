@@ -1,7 +1,7 @@
 <?php
 
 
-require_once("modelos/generico_modelo.php");
+require_once("PHP/modelos/generico_modelo.php");
 class Noticias_modelo extends generico_modelo{
 
     protected $titulo;
@@ -16,7 +16,7 @@ class Noticias_modelo extends generico_modelo{
 
     protected $imagen;
 
-    private $totalEnLista = 2;
+    private $totalEnLista = 3;
 
     public function obtenerTitulo(){
         return $this->titulo;	
@@ -31,19 +31,19 @@ class Noticias_modelo extends generico_modelo{
         return $this->id;	
     }
     public function obtenerImagen(){
-        return $this->imagen; 
-    } 
+        return $this->imagen;	
+    }
 
     
     
-    public function __constructor($dato = array()){
+    public function __constructor($data = array()){
 
-        $this->id 		    = $dato['id'];
-        $this->titulo 		= $dato['titulo'];
-        $this->cuerpo 		= $dato['cuerpo'];
-        $this->categorias 	= $dato['categorias'];
-        $this->imagen       = $dato['imagen'];
-    } 
+        $this->id 		        = $data['id'];
+        $this->titulo			= $data['titulo'];
+        $this->cuerpo			= $data['cuerpo'];
+        $this->categorias       = $data['categorias'];
+        $this->imagen 		    = $data['imagen'];
+    }
 
     public function ingresar(){
 
